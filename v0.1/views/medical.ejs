@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>의료 페이지</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>의료 페이지</h1>
+  <ul>
+    <% data.forEach(function(item) { %>
+      <li><%= item.title %></li>
+      <li><%= item.address %></li>
+      <li><%= item.urlString %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
