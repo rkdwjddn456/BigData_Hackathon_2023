@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>문화 페이지</title>
+  <link rel="stylesheet" href="/culture.css">
+</head>
+<body>
+  <div class="top">
+    <div class="logo-search">
+      <img class="category-logo" src="/images/logo.png">
+    </div>     
+  </div>
+  <div class="header">
+    <div class="logo-title"><br>
+      부산시에서 지원하는 <b>문화 복지</b> <br>프로그램입니다 !
+    </div>
+  </div>
+  <a class="home-btn" href="/">홈</a>
+  <div class="table">
+    <table id="rwd-table">
+      <thead>
+        <tr>
+          <th class="pin">제목</th>
+          <th>주소</th>
+          <th>링크</th>
+        </tr>
+      </thead>
+      <tbody>
+    <% data.forEach(function(event) { %>
+    <tr>
+      <td><%= event.name %></td>
+      <td><%= event.Address %></td>
+      <td><%= event.urlString%></td>
+    </tr>
+    <% }) %>
+  </tbody>
+  </table>
+</div>
+</body>
+</html>
