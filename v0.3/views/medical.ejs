@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>의료 페이지</title>
+  <link rel="stylesheet" href="/medical.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo-search">
+      <img class="category-logo" src="/images/logo2.png">
+    </div>
+    <div class="logo-title">
+      부산시에서 현재 지원하는<br> <b>의료 정보</b>입니다 !
+    </div>
+  </div>
+  <div class="header">
+    <a class="home-btn" href="/home">홈</a>
+  </div>
+  <div class="table">
+    <table id="rwd-table">
+      <thead>
+        <tr>
+          <th class="pin">제목</th>
+          <th>주소</th>
+          <th>링크</th>
+        </tr>
+      </thead>
+      <tbody>
+    <% data.forEach(function(item) { %>
+      <tr>
+      <td><%= item.title %></td>
+      <td><%= item.address %></td>
+      <td><%= item.urlString %></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+</div>
+</body>
+</html>
+
+
