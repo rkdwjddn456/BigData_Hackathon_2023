@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>디지털 취약계층을 위한 정보제공</title>
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div class="top">
+     
+  </div>
+  <div>
+  </div>
+  <div class="header">
+    <img class="main-logo" src="/images/logo.png"><br><br>
+    내 손안의 맞춤 정보 서비스
+  </div>
+  <div class="search">
+    <input style="outline: none;" type="text" class="search-txt" id="search-input" placeholder="찾으시는 지원 정책 또는 혜택을 검색해 보세요!">
+    <span>
+      <img class="search-btn" src="/images/glass2.png" onclick="search()">
+    </span>
+  </div>
+
+    <div id="search-results"></div>
+    <div class="category"> 
+      <div class="container">
+        <div><a class="box1" href="/jobs">
+          <img class="box-img" src="/images/job.png">
+          <div class="box-txt">일자리</div>
+        </a></div>
+        <div><a class="box2" href="/medical">
+          <img class="box-img" src="/images/medical.png">
+          <div class="box-txt">의료</div>
+        </a></div>
+        <div><a class="box3" href="/culture">
+          <img class="box-img" src="/images/culture.png">
+          <div class="box-txt">문화</div>
+        </a></div>
+      </div>
+  </div>
+  <div class="last">
+    <img class="main_banner" src="/images/main-banner.png">
+  </div>
+  <div class="footer"></div>
+  <script>
+    function search() {
+    const searchInput = document.getElementById('search-input');
+    const query = searchInput.value;
+
+    // Redirect to the search route
+    window.location.href = `/search?query=${encodeURIComponent(query)}`;
+  }
+</script>
+ </body>
+</html>

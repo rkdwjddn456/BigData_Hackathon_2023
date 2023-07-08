@@ -1,0 +1,90 @@
+@media(max-width:767px) {
+	.txt{
+		list-style-type: none;
+		font-size: 4px;
+		color: gray;
+		position: relative;
+		left: 22%;
+	}
+
+	footer {
+		/*이 footer를 감싼 영역 자체에 margin-top을 줘버리면 빈 공간이 생김*/
+		clear: both;
+		width: 100%;
+		height: 70px;
+		color: gray;
+		list-style-type: none;
+		background-color:#292929;
+		font-size: 10px;
+	}
+	.footer_box {
+		clear: both;
+		width: 100%;
+		height: 70px;
+		margin: 0 auto;
+	}
+	.footer_logo {
+		float: left;
+		margin-top: 5px;
+		margin-left: 5px;
+		width: 40px;
+		height:40px;
+	}
+	.footer_box .address {
+		float: right;
+		margin-right:20%;
+		margin-top: 2%;
+		font-size: 3px;
+		color: gray;
+		/* margin: 45px 0 0 30px; */
+	}
+	.address{
+		color: darkgray;
+	}
+}
+
+
+@media(min-width:768px) {
+	.txt{
+		list-style-type: none;
+		font-size: 17px;
+		color: gray;
+		position: relative;
+		left: 70%;
+		line-height: 1.5rem;
+	}
+
+	footer {
+		clear: both;
+		position: relative;
+		width: 100%;
+		height: 150px;
+		color: darkgray;
+		list-style-type: none;
+		background-color:#292929;
+	}
+	.footer_box {
+		position: relative;
+		width: 100%;
+		height: 150px;
+	}
+	.footer_logo {
+		clear: both;
+		float: left;
+		margin-top: 12.5px;
+		width: 100px;
+		left: 3%;
+		height:100px;
+	}
+	.footer_box .address {
+		float: right;
+		margin-right: 20%;
+		font-size: 20px;
+		color: darkgray;
+	}
+	.address{
+		margin-top: 2%;
+		color: #404040;
+		
+	}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>일자리 페이지</title>
+  <link rel="stylesheet" href="/jobs.css">
+</head>
+<body>
+  <div class="top">
+    <div class="logo-search">
+      <img class="category-logo" src="/images/logo2.png">
+    </div>     
+  </div>
+  <div class="header">
+    <div class="logo-title"><br>
+      <b>현재 신청 가능한</b><br> 부산시 구인공고를 바로 확인하세요
+    </div><br><br>
+  </div>
+  <a href="/"><img class="home-btn" src="/images/home-logo.png"></a>
+  <div class="table">
+    <table id="rwd-table">
+      <thead>
+        <tr>
+          <th class="pin">제목</th>
+          <th>주소</th>
+          <th>링크</th>
+        </tr>
+      </thead>
+      <% data.forEach(function(job) { %>
+      <tr>
+      <td><%= job.title %></t>
+      <td><%= job.address %></td>
+      <td><%= job.urlString %></td>
+      <tr>
+      <% }) %>
+</body>
+</html>
+

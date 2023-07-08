@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>의료 페이지</title>
+  <link rel="stylesheet" href="/medical.css">
+</head>
+<body>
+  <div class="top">
+    <div class="logo-search">
+      <img class="category-logo" src="/images/logo2.png">
+    </div>     
+  </div>
+  <div class="header">
+
+    <div class="logo-title"><br>
+      부산시에서 제공하는<br> <b>건강 복지 혜택</b>을 한 눈에
+    </div>
+  </div>
+  <a href="/"><img class="home-btn" src="/images/home-logo.png"></a>
+  <div class="table">
+    <table id="rwd-table">
+      <thead>
+        <tr>
+          <th class="pin">제목</th>
+          <th>주소</th>
+          <th>링크</th>
+        </tr>
+      </thead>
+      <tbody>
+    <% data.forEach(function(item) { %>
+      <tr>
+      <td><%= item.title %></td>
+      <td><%= item.address %></td>
+      <td><%= item.urlString %></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+<footer>
+  <div className="footer_box">
+    <div className="footer_logo">
+      <img src={logo} className="footer_logo" alt=""></img>
+    </div>
+    <div className="address">
+      <ul>
+        <li className="txt">본사 : 부산광역시 해운대, 5층</li>
+        <li className="txt">TEL : 010-xxxx-xxxx</li>
+        <li className="txt">COPYRIGHT (C) 1부삼동 정보 브릿지</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</div>
+</body>
+</html>
+
+
